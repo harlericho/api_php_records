@@ -1,0 +1,4 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !(.*)backend
+RewriteRule ^(.*)$ backend/$1 [L]
